@@ -1,0 +1,99 @@
+.navigation-bar {
+    display: flex;
+}
+
+.box {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.option span {
+    list-style: none;
+    color: #232320;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #FEFAF6;
+}
+
+.options-container {
+    padding: 0;
+}
+
+#box1 span {
+    font-size: 30px;
+}
+
+#box1 span:hover {
+    font-size: 31px;
+}
+
+#box2 span:hover {
+    font-size: 19px;
+}
+
+#box3 span:hover {
+    font-size: 19px;
+}
+
+#box4 span:hover {
+    font-size: 19px;
+}
+
+#box1, #box2, #box3, #box4 {
+    background-color: #FEFAF6;
+}
+
+#box5 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+}
+
+#box5 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navigation-bar {
+        display: block;
+    }
+    .option span {
+        background-color: #f3f3f3;
+    }
+    #box1, #box2, #box3, #box4 {
+        background-color: #f3f3f3;
+    }
+    #box1:hover {
+        background-color: #FEFAF6;
+    }
+    #box2:hover {
+        background-color: #FEFAF6;
+    }
+    #box3:hover {
+        background-color: #FEFAF6;
+    }
+    #box4:hover {
+        background-color: #FEFAF6;
+    }
+    #box1:hover span {
+        background-color: #FEFAF6;
+    }
+    #box2:hover span {
+        background-color: #FEFAF6;
+    }
+    #box3:hover span {
+        background-color: #FEFAF6;
+    }
+    #box4:hover span {
+        background-color: #FEFAF6;
+    }
+}

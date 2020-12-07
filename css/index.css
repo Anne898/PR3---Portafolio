@@ -1,0 +1,101 @@
+.container-index {
+    display: grid;
+    gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 20px;
+    margin: 50px 100px 10px 100px;
+    grid-template-areas: "content1 content2 content3 content4" "content1 content2 content3 content4" "content5 content6 content7 content8" "content5 content6 content7 content8" "content9 content10 content11 content12" "content9 content10 content11 content12"
+}
+
+.imagen {
+    background-size: cover;
+    background-position: center center;
+    max-width: auto;
+    height: auto;
+    background-color: #afb2b7;
+    border-radius: 10px;
+}
+
+#content1 {
+    grid-area: content1;
+    background-image: url("../imagenes/2.png");
+}
+
+#content2 {
+    grid-area: content2;
+    background-image: url("../imagenes/ic.png");
+}
+
+#content3 {
+    grid-area: content3;
+    background-image: url("../imagenes/portadaVideo.png");
+}
+
+#content4 {
+    grid-area: content4;
+}
+
+#content5 {
+    grid-area: content5;
+}
+
+#content6 {
+    grid-area: content6;
+}
+
+#content7 {
+    grid-area: content7;
+}
+
+#content8 {
+    grid-area: content8;
+}
+
+#content9 {
+    grid-area: content9;
+}
+
+#content10 {
+    grid-area: content10;
+}
+
+#content11 {
+    grid-area: content11;
+}
+
+#content12 {
+    grid-area: content12;
+}
+
+@media (max-width: 1200px) {
+    .container-index {
+        display: grid;
+        gap: 50px;
+        grid-auto-rows: minmax(100px, auto);
+        row-gap: 20px;
+        margin: 50px 100px 10px 100px;
+        grid-template-areas: "content1 content2 content3" "content1 content2 content3" "content4 content5 content6" "content4 content5 content6" "content7 content8 content9" "content7 content8 content9" "content10 content11 content12" "content10 content11 content12"
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-index {
+        display: grid;
+        gap: 50px;
+        grid-auto-rows: minmax(100px, auto);
+        row-gap: 20px;
+        margin: 50px 100px 10px 100px;
+        grid-template-areas: "content1 content2" "content1 content2" "content3 content4" "content3 content4" "content5 content6" "content5 content6" "content7 content8 " "content7 content8" "content9 content10" "content9 content10" "content11 content12" "content11 content12"
+    }
+}
+
+@media (max-width: 768px) {
+    .container-index {
+        display: grid;
+        gap: 50px;
+        grid-auto-rows: minmax(100px, auto);
+        row-gap: 20px;
+        margin: 50px 100px 10px 100px;
+        grid-template-areas: "content1" "content1" "content2" "content2" "content3" "content3" "content4" "content4" "content5" "content5" "content6" "content6" "content7" "content7" "content8" "content8" "content9" "content9" "content10" "content10" "content11" "content11" "content12" "content12"
+    }
+}

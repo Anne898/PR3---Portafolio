@@ -1,0 +1,37 @@
+nav li {
+    display: block;
+}
+
+.navbar-hover .options-container {
+    display: flex;
+}
+
+.navbar-hover .option {
+    width: 100%;
+}
+
+.navbar-hover .option ul {
+    display: none;
+    padding: 0;
+    background-color: #262526;
+    border-radius: 10%;
+    position: absolute;
+}
+
+.navbar-hover .option:hover ul {
+    display: block;
+}
+
+.options {
+    color: #FEFAF6;
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    margin: 15px;
+}
+
+.options:hover {
+    color: #FFC4FF;
+}
+
+/* CSS link hover (green) */

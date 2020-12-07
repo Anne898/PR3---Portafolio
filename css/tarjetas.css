@@ -1,0 +1,52 @@
+.tarjetas-container {
+    height: 300px;
+    width: 190px;
+    margin: auto;
+    position: relative;
+    perspective: 30rem;
+}
+
+.tarjeta {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figura {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.tarjeta:hover {
+    transform: rotateY(90deg);
+}
+
+.lado {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.frente {
+    background-color: #FEFAF6;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.atras {
+    transform: rotateY(90deg);
+}

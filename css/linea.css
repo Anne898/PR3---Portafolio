@@ -1,0 +1,111 @@
+.container-linea {
+    display: grid;
+    gap: 50px;
+    grid-auto-rows: minmax(50px, auto);
+    row-gap: 0px;
+    margin: 80px;
+    grid-template-areas: "titulo titulo titulo" ". . content1" ". . content1" ". content2 ." ". content2 ." "content3 . ." "content3 . ."
+}
+
+.texto-linea {
+    color: #f3f3f3;
+}
+
+.texto-titulo {
+    text-align: center;
+    color: #020202;
+}
+
+#titulo {
+    grid-area: titulo;
+}
+
+#content1 {
+    grid-area: content1;
+    border-radius: 50px;
+    background-color: #ffeec4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+#content1 p {
+    color: #5a4610;
+}
+
+#content2 {
+    grid-area: content2;
+    border-radius: 50px;
+    background-color: #D4DBF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+#content2 p {
+    color: #2a335a;
+}
+
+#content3 {
+    grid-area: content3;
+    border-radius: 50px;
+    background-color: #AADCDA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+#content3 p {
+    color: #090F0F;
+}
+
+@media (max-width: 1200px) {
+    .container-linea {
+        display: grid;
+        gap: 50px;
+        grid-auto-rows: minmax(50px, auto);
+        row-gap: 0px;
+        margin: 80px;
+        grid-template-areas: "titulo titulo titulo" ". . content1" ". . content1" ". content2 ." ". content2 ." "content3 . ." "content3 . ."
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-linea {
+        display: grid;
+        gap: 50px;
+        grid-auto-rows: minmax(50px, auto);
+        row-gap: 0px;
+        margin: 80px;
+        grid-template-areas: "titulo titulo titulo" ". . content1" ". . content1" ". content2 ." ". content2 ." "content3 . ." "content3 . ."
+    }
+    #content1 p {
+        font-size: 15px;
+    }
+    #content2 p {
+        font-size: 15px;
+    }
+    #content3 p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-linea {
+        display: grid;
+        gap: 50px;
+        grid-auto-rows: minmax(50px, auto);
+        row-gap: 50px;
+        margin: 80px;
+        grid-template-areas: "titulo" "content1" "content1" "content2" "content2" "content3" "content3"
+    }
+}
